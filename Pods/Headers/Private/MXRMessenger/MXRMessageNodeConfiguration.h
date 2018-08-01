@@ -1,0 +1,1 @@
+../../../MXRMessenger/MXRMessenger/MessageCell/MXRMessageNodeConfiguration.h
