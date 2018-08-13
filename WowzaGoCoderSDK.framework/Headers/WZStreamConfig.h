@@ -19,7 +19,6 @@
 //
 
 #import "WZMediaConfig.h"
-#import "WZData.h"
 
 /*!
  @class WZStreamConfig
@@ -35,7 +34,7 @@
 @property (nonatomic, strong, nullable) NSString *hostAddress;
 
 /*!
- *  The server connection port number. Default is 1935
+ *  The server connection port number. Default is 1935.
  */
 @property (nonatomic, assign) NSUInteger portNumber;
 
@@ -58,11 +57,6 @@
  *  The password for Source Authentication
  */
 @property (nonatomic, strong, nullable) NSString *password;
-/*!
- *  The connection parameters passed as the query string at connect time
- */
-@property (nonatomic, strong, nullable) WZDataMap *connectionParameters;
-
 
 #pragma mark - Public Instance Methods -
 

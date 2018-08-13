@@ -65,6 +65,4 @@
  */
 - (void) unregisterSink:(nonnull id<WZAudioSink>)sink;
 
-+ (NSArray *_Nullable) supportedBitratesForSampleRateAndChannels:(Float64)sampleRate channels:(UInt32)numChannels;
-
 @end

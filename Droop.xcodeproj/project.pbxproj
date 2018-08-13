@@ -142,8 +142,14 @@
 		19FE43201FC98EB200DCD71C /* liveHostAllScr.m in Sources */ = {isa = PBXBuildFile; fileRef = 19FE431F1FC98EB200DCD71C /* liveHostAllScr.m */; };
 		19FE432A1FCBD95B00DCD71C /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FE43291FCBD95400DCD71C /* UserNotifications.framework */; };
 		59C82080A6BB1843F087337A /* libPods-Droop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 813584E2145C1BAF4B1551BC /* libPods-Droop.a */; };
-		7A1C202020A58D5200E572E3 /* WowzaGoCoderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1C201F20A58D5100E572E3 /* WowzaGoCoderSDK.framework */; };
-		7A1C202120A58D5200E572E3 /* WowzaGoCoderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1C201F20A58D5100E572E3 /* WowzaGoCoderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68BFAE07211C0C320089C1AE /* CustomFrameSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BFADFF211C0C310089C1AE /* CustomFrameSizeViewController.m */; };
+		68BFAE08211C0C320089C1AE /* GoCoderSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BFAE00211C0C310089C1AE /* GoCoderSettings.storyboard */; };
+		68BFAE09211C0C320089C1AE /* SettingsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BFAE03211C0C320089C1AE /* SettingsViewModel.m */; };
+		68BFAE0A211C0C320089C1AE /* SettingsTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BFAE04211C0C320089C1AE /* SettingsTextFieldCell.m */; };
+		68BFAE0B211C0C320089C1AE /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BFAE06211C0C320089C1AE /* SettingsViewController.m */; };
+		68D765752119BF4000AD0440 /* WowzaGoCoderSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D765742119BF4000AD0440 /* WowzaGoCoderSDK.framework */; };
+		68D765762119BF4000AD0440 /* WowzaGoCoderSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68D765742119BF4000AD0440 /* WowzaGoCoderSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68D765792119C28000AD0440 /* MP4Writer.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D765782119C28000AD0440 /* MP4Writer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -153,7 +159,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7A1C202120A58D5200E572E3 /* WowzaGoCoderSDK.framework in Embed Frameworks */,
+				68D765762119BF4000AD0440 /* WowzaGoCoderSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +348,20 @@
 		19FE431E1FC98EB200DCD71C /* liveHostAllScr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = liveHostAllScr.h; sourceTree = "<group>"; };
 		19FE431F1FC98EB200DCD71C /* liveHostAllScr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = liveHostAllScr.m; sourceTree = "<group>"; };
 		19FE43291FCBD95400DCD71C /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		7A1C201F20A58D5100E572E3 /* WowzaGoCoderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WowzaGoCoderSDK.framework; sourceTree = "<group>"; };
+		68BFADFE211C0C310089C1AE /* SettingsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewModel.h; sourceTree = "<group>"; };
+		68BFADFF211C0C310089C1AE /* CustomFrameSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFrameSizeViewController.m; sourceTree = "<group>"; };
+		68BFAE00211C0C310089C1AE /* GoCoderSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GoCoderSettings.storyboard; sourceTree = "<group>"; };
+		68BFAE01211C0C310089C1AE /* CustomFrameSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFrameSizeViewController.h; sourceTree = "<group>"; };
+		68BFAE02211C0C310089C1AE /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		68BFAE03211C0C320089C1AE /* SettingsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewModel.m; sourceTree = "<group>"; };
+		68BFAE04211C0C320089C1AE /* SettingsTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTextFieldCell.m; sourceTree = "<group>"; };
+		68BFAE05211C0C320089C1AE /* SettingsTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTextFieldCell.h; sourceTree = "<group>"; };
+		68BFAE06211C0C320089C1AE /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		68BFAE12211C5CF00089C1AE /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = Droop/Video/SceneKit.framework; sourceTree = "<group>"; };
+		68BFAE15211C5CF80089C1AE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = Droop/Video/SpriteKit.framework; sourceTree = "<group>"; };
+		68D765742119BF4000AD0440 /* WowzaGoCoderSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WowzaGoCoderSDK.framework; sourceTree = "<group>"; };
+		68D765772119C28000AD0440 /* MP4Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MP4Writer.h; sourceTree = "<group>"; };
+		68D765782119C28000AD0440 /* MP4Writer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MP4Writer.m; sourceTree = "<group>"; };
 		813584E2145C1BAF4B1551BC /* libPods-Droop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Droop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -367,8 +386,8 @@
 				18417EC61F6C1857009FF21D /* AVFoundation.framework in Frameworks */,
 				18417EC71F6C1857009FF21D /* AVKit.framework in Frameworks */,
 				18417EC11F6C15C1009FF21D /* MobileCoreServices.framework in Frameworks */,
+				68D765752119BF4000AD0440 /* WowzaGoCoderSDK.framework in Frameworks */,
 				199E1BAF1FC2E9480096396C /* libsqlite3.tbd in Frameworks */,
-				7A1C202020A58D5200E572E3 /* WowzaGoCoderSDK.framework in Frameworks */,
 				59C82080A6BB1843F087337A /* libPods-Droop.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +509,9 @@
 		18BB2F8B1F5680B400295D8B = {
 			isa = PBXGroup;
 			children = (
-				7A1C201F20A58D5100E572E3 /* WowzaGoCoderSDK.framework */,
+				68BFAE15211C5CF80089C1AE /* SpriteKit.framework */,
+				68BFAE12211C5CF00089C1AE /* SceneKit.framework */,
+				68D765742119BF4000AD0440 /* WowzaGoCoderSDK.framework */,
 				18BB2F961F5680B500295D8B /* Droop */,
 				18BB2F951F5680B500295D8B /* Products */,
 				968FECB621F467E31F0CFF85 /* Frameworks */,
@@ -509,6 +530,7 @@
 		18BB2F961F5680B500295D8B /* Droop */ = {
 			isa = PBXGroup;
 			children = (
+				68BFADFD211C0BF30089C1AE /* Video */,
 				18BB2F9A1F5680B500295D8B /* AppDelegate.h */,
 				18BB2F9B1F5680B600295D8B /* AppDelegate.m */,
 				18BB2F9D1F5680B600295D8B /* ViewController.h */,
@@ -518,6 +540,8 @@
 				18BB2FA51F5680B700295D8B /* LaunchScreen.storyboard */,
 				191EDEFF1FCC28B100B82C7E /* Droop.entitlements */,
 				18BB2FA81F5680B700295D8B /* Info.plist */,
+				68D765772119C28000AD0440 /* MP4Writer.h */,
+				68D765782119C28000AD0440 /* MP4Writer.m */,
 				00FABC0320406BD5007944A7 /* Utils.h */,
 				00FABC0420406BD5007944A7 /* Utils.m */,
 				187CDC291F56E8B500B3F139 /* loginScr.h */,
@@ -601,6 +625,22 @@
 				14D7B1FE0BD02D783C5838AE /* Pods-Droop.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		68BFADFD211C0BF30089C1AE /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				68BFAE01211C0C310089C1AE /* CustomFrameSizeViewController.h */,
+				68BFADFF211C0C310089C1AE /* CustomFrameSizeViewController.m */,
+				68BFAE00211C0C310089C1AE /* GoCoderSettings.storyboard */,
+				68BFAE05211C0C320089C1AE /* SettingsTextFieldCell.h */,
+				68BFAE04211C0C320089C1AE /* SettingsTextFieldCell.m */,
+				68BFAE02211C0C310089C1AE /* SettingsViewController.h */,
+				68BFAE06211C0C320089C1AE /* SettingsViewController.m */,
+				68BFADFE211C0C310089C1AE /* SettingsViewModel.h */,
+				68BFAE03211C0C320089C1AE /* SettingsViewModel.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 		968FECB621F467E31F0CFF85 /* Frameworks */ = {
@@ -771,6 +811,7 @@
 				0028FB8B2033E1770028D64F /* buploadic.png in Resources */,
 				0028FBAD2033E1770028D64F /* messageic.png in Resources */,
 				0028FBB32033E1770028D64F /* muteonic.png in Resources */,
+				68BFAE08211C0C320089C1AE /* GoCoderSettings.storyboard in Resources */,
 				0028FBA92033E1770028D64F /* Logo w gradiant.png in Resources */,
 				18BB2FA21F5680B600295D8B /* Main.storyboard in Resources */,
 				0028FBAC2033E1770028D64F /* mailicon.png in Resources */,
@@ -871,14 +912,19 @@
 				0028FBD0203490DB0028D64F /* HomeLiveCell.m in Sources */,
 				19FE431D1FC963A100DCD71C /* adVenturesAll.m in Sources */,
 				191891071F9DEA9B00B33927 /* finaliseDual.m in Sources */,
+				68D765792119C28000AD0440 /* MP4Writer.m in Sources */,
 				198A1E1B1FAC68CE00CBA4BD /* msgsScr.m in Sources */,
 				187CDC321F56F47B00B3F139 /* signupScr.m in Sources */,
 				0028FBD320349A2F0028D64F /* HomeVentureCell.m in Sources */,
 				198A1E181FAC347400CBA4BD /* msgThreadsScr.m in Sources */,
+				68BFAE07211C0C320089C1AE /* CustomFrameSizeViewController.m in Sources */,
 				0028FBCD20348B8D0028D64F /* DualCollectionCell.m in Sources */,
+				68BFAE0B211C0C320089C1AE /* SettingsViewController.m in Sources */,
+				68BFAE0A211C0C320089C1AE /* SettingsTextFieldCell.m in Sources */,
 				192D97201F964ED400F4D86C /* otherProScr.m in Sources */,
 				18417ECC1F6C3F2A009FF21D /* adVentureFinal.m in Sources */,
 				18BB2F9C1F5680B600295D8B /* AppDelegate.m in Sources */,
+				68BFAE09211C0C320089C1AE /* SettingsViewModel.m in Sources */,
 				0028FBC420348B4C0028D64F /* HomeCollectionHeaderView.m in Sources */,
 				008ADFF0202CA83400B50E1A /* UserTableViewCell.m in Sources */,
 				0028FBC720348B650028D64F /* LiveCollectionCell.m in Sources */,
@@ -1049,6 +1095,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Droop/Video",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1063,7 +1110,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jukbox.appcom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.WowzaLiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1086,6 +1133,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Droop/Video",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1100,7 +1148,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jukbox.appcom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mm.WowzaLiveDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

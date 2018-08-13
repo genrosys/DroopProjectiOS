@@ -14,7 +14,7 @@
 
 
 
-@interface goliveScr : UIViewController </*AXRecorderDelegate,*/ UITableViewDelegate, UITableViewDataSource, UITextViewDelegate,WZStatusCallback, WZVideoSink, WZAudioSink, WZVideoEncoderSink, WZAudioEncoderSink, WZDataSink> {
+@interface goliveScr : UIViewController  {
     IBOutlet UIButton *startLiveBtn;
     IBOutlet UIView *recorderPreview;
     IBOutlet UILabel *liveLbl;
@@ -60,9 +60,9 @@
 @property(nonatomic)IBOutlet UIView *recorderPreview;
 @property(nonatomic)IBOutlet UIButton *startLiveBtn;
 
-@property (nonatomic, strong) WowzaGoCoder      *goCoder;
-@property (nonatomic, strong) WowzaConfig       *goCoderConfig;
-@property (nonatomic, strong) WZCameraPreview   *goCoderCameraPreview;
-
+//@property (nonatomic, strong) WowzaGoCoder      *goCoder;
+//@property (nonatomic, strong) WowzaConfig       *goCoderConfig;
+//@property (nonatomic, strong) WZCameraPreview   *goCoderCameraPreview;
+//
 
 @end

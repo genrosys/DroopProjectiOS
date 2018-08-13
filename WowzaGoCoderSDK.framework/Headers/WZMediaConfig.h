@@ -85,7 +85,6 @@ typedef NS_ENUM(NSUInteger, WZAudioChannels) {
     WZAudioChannelsStereo   = 2
 };
 
-
 #pragma mark - Public Class Methods -
 
 /*!
@@ -230,11 +229,6 @@ typedef NS_ENUM(NSUInteger, WZAudioChannels) {
  */
 @property (nonatomic, assign) WZBroadcastScaleMode broadcastScaleMode;
 
-/*!
- *  Sets whether the front (selfie) camera mirrors captured video. Default is YES.
- */
-@property (nonatomic, assign) BOOL mirrorFrontCamera;
-
 #pragma mark -
 
 /*!
@@ -265,9 +259,7 @@ typedef NS_ENUM(NSUInteger, WZAudioChannels) {
 
 /*!
  *  The desired audio bitrate. Note that the actual bitrate
- *  might be different from the desired rate. Set this property to 0
- *  to have WowzaGoCoder select the optimal bitrate based on the
- *  current hardware capabilities. The default value is 0.
+ *  might be different from the desired rate.
  */
 @property (nonatomic, assign) NSUInteger audioBitrate;
 

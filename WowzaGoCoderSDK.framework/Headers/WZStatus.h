@@ -41,12 +41,10 @@ extern NSString * __nonnull const  WZStatusPreviousBitrateKey;
 
 /*!
  *  @typedef WZState
- *  @constant WZStateIdle The broadcasting ccomponent or session is idle; i.e. not broadcasting.
- *  @constant WZStateStarting The broadcasting component or session is starting up or initializing.
- *  @constant WZStateRunning The broadcasting component or session is broadcasting or running.
- *  @constant WZStateStopping The broadcasting component or session is shutting down.
- *  @constant WZStateBuffering The broadcasting component or session is buffering.
- *  @constant WZStateReady The broadcasting component or session is in a ready state or has been successfully initialized.
+ *  @constant WZStateIdle The broadcasting session is idle; i.e. not broadcasting.
+ *  @constant WZStateStarting The broadcasting session is starting up.
+ *  @constant WZStateRunning The broadcasting session is broadcasting.
+ *  @constant WZStateStopping The broadcasting session is shutting down.
  *  @discussion The component state values.
  */
 typedef NS_ENUM(NSUInteger, WZState) {
@@ -57,6 +55,8 @@ typedef NS_ENUM(NSUInteger, WZState) {
     WZStateBuffering,
     WZStateReady
 };
+
+
 
 /*!
  *  @typedef WZEvent
@@ -182,58 +182,5 @@ typedef NS_ENUM(NSUInteger, WZEvent) {
  */
 - (nonnull instancetype) initWithState:(WZState)aState event:(WZEvent)event;
 
-/*!
- *  Re-initialize a WZStatus object, clearing any error, event, and data values and setting the state to WZStateIdle
- */
-- (void) resetStatus;
-
-/*!
- *  Re-initialize a WZStatus object, clearing any error, event, and data values and setting the state to the specified value
- *
- *  @param aState The state to initialize with
- */
-- (void) resetStatusWithState:(WZState)aState;
-
-/*!
- *  Test to see if the state equals WZStateIdle
- *
- *  @return true if the state is WZStateIdle, false otherwise
- */
-@property (readonly, nonatomic) BOOL isIdle;
-
-/*!
- *  Test to see if the state equals WZStateStarting
- *`
- *  @return true if the state is WZStateStarting, false otherwise
- */
-@property (readonly, nonatomic) BOOL isStarting;
-
-/*!
- *  Test to see if the state equals WZStateReady
- *
- *  @return true if the state is WZStateReady, false otherwise
- */
-@property (readonly, nonatomic) BOOL isReady;
-
-/*!
- *  Test to see if the state equals WZStateRunning
- *
- *  @return true if the state is WZStateRunning, false otherwise
- */
-@property (readonly, nonatomic) BOOL isRunning;
-
-/*!
- *  Test to see if the state equals WZStateStopping
- *
- *  @return true if the state is WZStateStopping, false otherwise
- */
-@property (readonly, nonatomic) BOOL isStopping;
-
-/*!
- *  Test to see if the error is non-null
- *
- *  @return true if the error is non-null, false otherwise
- */
-@property (readonly, nonatomic) BOOL hasError;
 
 @end

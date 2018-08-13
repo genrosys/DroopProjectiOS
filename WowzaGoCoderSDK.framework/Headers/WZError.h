@@ -37,8 +37,7 @@ static NSString *const WowzaGoCoderSDKErrorDomain = @"com.wowza.gocoder.sdk";
  *  @constant WZErrorInternalError An internal error.
  *  @constant WZErrorInvalidSDKLicense The SDK license key was not recognized.
  *  @constant WZErrorExpiredSDKLicense The SDK license key has expired.
- *  @constant WZErrorExpiredSDKLicense The SDK license key has expired.
- *  @constant WZErrorInvalidAudioConfiguration An invalid audio sample rate, bitrate, or channels value was specified.
+ *  @constant WZErrorUnknownError An unknown error.
  *  @discussion WZError constants.
  */
 typedef NS_ENUM(NSUInteger, WZError) {
@@ -56,7 +55,6 @@ typedef NS_ENUM(NSUInteger, WZError) {
     WZErrorCameraAccessDenied,
     WZErrorMicrophoneAccessDenied,
     WZErrorMicrophoneInsufficientPriority,
-    WZErrorInvalidAudioConfiguration,
     WZErrorUnknownError,
 };
 

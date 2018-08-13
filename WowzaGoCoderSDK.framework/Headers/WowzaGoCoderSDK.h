@@ -40,7 +40,6 @@
 #import "WZImageUtilities.h"
 #import "WZData.h"
 #import "WZDataEvent.h"
-#import "WZDataSink.h"
 
 #if ! WGC_TARGET_EXTENSION
 

@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/WZAudioDevice.h</key>
 		<data>
-		BdZNvcBcBD4oPJl2urdZYnkaipI=
+		Mszyfrd5WxMm6lHyj2SWzWM/zA4=
 		</data>
 		<key>Headers/WZAudioEncoderSink.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/WZBroadcast.h</key>
 		<data>
-		Qj1wo0i9Tcqom0n8f0qG6AQk2Os=
+		eewzPGuBTulgOT163EuILpPQWEg=
 		</data>
 		<key>Headers/WZBroadcastComponent.h</key>
 		<data>
@@ -38,19 +38,15 @@
 		</data>
 		<key>Headers/WZData.h</key>
 		<data>
-		UVy2dgv+FhBR7a4JKAJS43TH+xs=
+		xOp17drTVKsoglazIkYOzJYlEdw=
 		</data>
 		<key>Headers/WZDataEvent.h</key>
 		<data>
-		dBIux1o7rZO9Q/Myqb1wIhaw5nM=
-		</data>
-		<key>Headers/WZDataSink.h</key>
-		<data>
-		Y0/hAPQfXQTdamYaac6fykfAzyM=
+		Z+4k7mlPAdymIzFwVD5Ekru/huw=
 		</data>
 		<key>Headers/WZError.h</key>
 		<data>
-		FqPtQwHnR0hYtwQQ8CYSGDBvOJg=
+		OjRq9sAqFJHDgKy7WYHMko0algw=
 		</data>
 		<key>Headers/WZH264Encoder.h</key>
 		<data>
@@ -62,7 +58,7 @@
 		</data>
 		<key>Headers/WZMediaConfig.h</key>
 		<data>
-		S10/A2Z1cbhBHMotKWU3xzzXevk=
+		YinO8oMlfxZ1KJrkFa2V6Tja3Lo=
 		</data>
 		<key>Headers/WZMediaSink.h</key>
 		<data>
@@ -74,7 +70,7 @@
 		</data>
 		<key>Headers/WZStatus.h</key>
 		<data>
-		aPtRxfI8G4feE3dFnTuPP87/yXg=
+		hnNseK1fz8tRRsSYjtpKKiXlrdQ=
 		</data>
 		<key>Headers/WZStatusCallback.h</key>
 		<data>
@@ -82,7 +78,7 @@
 		</data>
 		<key>Headers/WZStreamConfig.h</key>
 		<data>
-		6b06id+nw/MTN56WuiGCyI4HOH8=
+		Y7YWSsqL6hijRKxcORA63IcDMIo=
 		</data>
 		<key>Headers/WZVersionInfo.h</key>
 		<data>
@@ -102,15 +98,15 @@
 		</data>
 		<key>Headers/WowzaGoCoder.h</key>
 		<data>
-		1rhW2FtwfiKApoeHELaH/PO+q5A=
+		fxYlgoOqOTspMgcyH8J3jdbZSXY=
 		</data>
 		<key>Headers/WowzaGoCoderSDK.h</key>
 		<data>
-		b2W5RY1lyVzAm2fJfPEwr+Q+v08=
+		2V45eC1cubKu6edRYoAwZJhU8l0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uMs6Fr1608YjJQbDNj+9uv47SLY=
+		tYnf+WZFf9Yy1+Cj1YDBa3ykb6E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -138,11 +134,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BdZNvcBcBD4oPJl2urdZYnkaipI=
+			Mszyfrd5WxMm6lHyj2SWzWM/zA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			SK9zayZROnJm6RmA5K49odDPn6m2qT7/mW6Bv7i+VBc=
+			fDMacpir554u6Pv0x/fZ/h4Ia16ktINBIyflFXsOQtE=
 			</data>
 		</dict>
 		<key>Headers/WZAudioEncoderSink.h</key>
@@ -171,11 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qj1wo0i9Tcqom0n8f0qG6AQk2Os=
+			eewzPGuBTulgOT163EuILpPQWEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			9zXo/TKvIT6PmWsAqQQ+FY7A7XrleeGFoG9vaXscuaw=
+			g1IP2VU/0jgkUX0IzyxNZZLSHgiGx6n3rvEoay5diUA=
 			</data>
 		</dict>
 		<key>Headers/WZBroadcastComponent.h</key>
@@ -215,44 +211,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UVy2dgv+FhBR7a4JKAJS43TH+xs=
+			xOp17drTVKsoglazIkYOzJYlEdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			juDl7HcKOku8oGEZJTAInGkvKOQAfRISzr9X1XtQqUI=
+			RakM3z2+/8mUufHYrSdRluMiFgbUpcN6BdJMxlNE7HA=
 			</data>
 		</dict>
 		<key>Headers/WZDataEvent.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dBIux1o7rZO9Q/Myqb1wIhaw5nM=
+			Z+4k7mlPAdymIzFwVD5Ekru/huw=
 			</data>
 			<key>hash2</key>
 			<data>
-			GUqhqOjmRpIPWURBTVvDYnWIHb6qBRPzCM6QvmBSh/k=
-			</data>
-		</dict>
-		<key>Headers/WZDataSink.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Y0/hAPQfXQTdamYaac6fykfAzyM=
-			</data>
-			<key>hash2</key>
-			<data>
-			AJ+PPISiIFkDUs7ad2DQzabLPkyyJBJ8/kqeq6IMvbg=
+			ImOO9f+5hfPkkR0raQ8jGM3i0N/VpAyR/AjNGbwdiaY=
 			</data>
 		</dict>
 		<key>Headers/WZError.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FqPtQwHnR0hYtwQQ8CYSGDBvOJg=
+			OjRq9sAqFJHDgKy7WYHMko0algw=
 			</data>
 			<key>hash2</key>
 			<data>
-			rtuiXS+ovcVQ9aYHCn/9QAPLNRoc5GPJGcbHAosVFdA=
+			0zUW69NNTFGk4P1MqXAv3kIwabzk9fCVB72RAziFjJU=
 			</data>
 		</dict>
 		<key>Headers/WZH264Encoder.h</key>
@@ -281,11 +266,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			S10/A2Z1cbhBHMotKWU3xzzXevk=
+			YinO8oMlfxZ1KJrkFa2V6Tja3Lo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PuMe97+nUix1q/Zvx7kuXq6s/fu8nvEF2sPi0Qj3ZGw=
+			YNzmaPMI6jlGtUF2m1vXxhL+GOq5RzWc/0keqOXNg3E=
 			</data>
 		</dict>
 		<key>Headers/WZMediaSink.h</key>
@@ -314,11 +299,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aPtRxfI8G4feE3dFnTuPP87/yXg=
+			hnNseK1fz8tRRsSYjtpKKiXlrdQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Yk+EzmwwYCXsGWPaGLXhNENjON7ItEHE8qWZkZ3PUlc=
+			Nby2wga8b6yC/H+e2YadK3o5afSb8cKna+j5BGueoSQ=
 			</data>
 		</dict>
 		<key>Headers/WZStatusCallback.h</key>
@@ -336,11 +321,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6b06id+nw/MTN56WuiGCyI4HOH8=
+			Y7YWSsqL6hijRKxcORA63IcDMIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			F/6aB29dTpz9hHVDlM/gemvzVI6Rk7SLhrpSbPPuUHc=
+			dctc7yu9jPnAnmP3W2icWbIXPy7fBLJhqVsclTLojdU=
 			</data>
 		</dict>
 		<key>Headers/WZVersionInfo.h</key>
@@ -391,22 +376,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1rhW2FtwfiKApoeHELaH/PO+q5A=
+			fxYlgoOqOTspMgcyH8J3jdbZSXY=
 			</data>
 			<key>hash2</key>
 			<data>
-			cFwdHrkvc+/jNM4eCNVcqDf7ZgGOZ1WOjRi5GlPLuRk=
+			OFIAIo/Xxdk5EcnuiXeOuh7MI5f9SIGnTPPWdTI68tw=
 			</data>
 		</dict>
 		<key>Headers/WowzaGoCoderSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b2W5RY1lyVzAm2fJfPEwr+Q+v08=
+			2V45eC1cubKu6edRYoAwZJhU8l0=
 			</data>
 			<key>hash2</key>
 			<data>
-			fUQEXbIb9bVPTyEeg2pRjZm5J1XbGcDBgHnd02wcM/w=
+			7vELe/YcNWqzTPt+JLiyQsIFxnJln1cSmWJzss4qhiw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -449,11 +434,6 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
-		</dict>
-		<key>^Base\.lproj/</key>
-		<dict>
-			<key>weight</key>
-			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -499,11 +479,6 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
-		</dict>
-		<key>^Base\.lproj/</key>
-		<dict>
-			<key>weight</key>
-			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

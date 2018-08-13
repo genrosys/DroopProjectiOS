@@ -15,11 +15,34 @@
 #import "DualCollectionCell.h"
 #import "UserTableViewCell.h"
 
-@interface homeScr ()
+#import <WowzaGoCoderSDK/WowzaGoCoderSDK.h>
+#import "SettingsViewModel.h"
+#import "SettingsViewController.h"
+#import "MP4Writer.h"
+
+
+
+#pragma mark VideoPlayerViewController (GoCoder SDK Sample App) -
+
+//NSString *const SDKSampleSavedConfigKey = @"SDKSampleSavedConfigKey";
+////NSString *const SDKSampleAppLicenseKey = @"GOSK-6443-0101-CD19-EB0F-E04E"; //old-no-features
+//
+////USE NEW KEY
+//NSString *const SDKSampleAppLicenseKey = @"GOSK-6D45-010F-F010-333D-AC20"; // com.wowza.gocoder.sdk.bpsampleapp
+
+
+
+
+@interface homeScr () <WZStatusCallback>
 
 @property (strong, nonatomic) NSMutableArray *filterUserAry;
 @property (strong, nonatomic) DGActivityIndicatorView *activityIndicator;
 @property (nonatomic) CGFloat keyboardHeight;
+
+
+#pragma mark - GoCoder SDK Components
+@property (nonatomic, strong) WowzaConfig               *goCoderConfig;
+//@property (nonatomic, strong) WOWZPlayer                  *player;
 
 @end
 
@@ -34,6 +57,10 @@
 NSMutableArray *liveFeeds;
 NSMutableArray *dualsArr;
 CGRect frameInitial;
+
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -56,6 +83,8 @@ CGRect frameInitial;
     self.activityIndicator = [[DGActivityIndicatorView alloc] initWithType:DGActivityIndicatorAnimationTypeBallPulse tintColor:droopColor size:40.0f];
     [self.searchTable addSubview:self.activityIndicator];
 }
+
+
 
 - (void)keyboardWillShow:(NSNotification *)notification {
     self.keyboardHeight = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
@@ -128,7 +157,6 @@ CGRect frameInitial;
 }
 
 - (void)getDuals {
-    
     
 //    dualsArr = nil;
 //    [self.homeCollectionView reloadSections:[NSIndexSet indexSetWithIndex:1]];
@@ -295,6 +323,12 @@ CGRect frameInitial;
             return cell;
         } else {
             UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NoLiveCell" forIndexPath:indexPath];
+            
+            
+            
+            
+            
+            
             return cell;
         }
     } else {
@@ -553,5 +587,93 @@ CGRect frameInitial;
         [self.searchTable reloadData];
     }];
 }
+
+
+
+#pragma mark - WOWZStatusCallback Protocol Instance Methods
+
+- (void) onWZStatus:(WZStatus *) goCoderStatus {
+    // A successful status transition has been reported by the GoCoder SDK
+    
+    switch (goCoderStatus.state) {
+            
+        case WZStateIdle:
+            
+//            self.settingsButton.hidden = NO;
+//            self.closeButton.hidden = NO;
+//            self.playbackButton.enabled = YES;
+//            [self.playbackButton setImage:[UIImage imageNamed:(@"playback_button")] forState:UIControlStateNormal];
+        {
+            [UIView animateWithDuration:0.25 animations:^{
+               // self.infoLabel.alpha = 0;
+            }];
+        }
+            break;
+            
+        case WZStateStarting:
+            // A streaming playback session is starting up
+//            self.closeButton.hidden = YES;
+//            self.settingsButton.hidden = YES;
+//            self.playbackButton.enabled = NO;
+//            self.infoLabel.text = @"Starting...";
+//            self.infoLabel.alpha = 1;
+//            self.player.playerView = self.previewView;
+            
+            break;
+            
+        case WZStateRunning:
+//            [self.playbackButton setImage:[UIImage imageNamed:(@"stop_playback_button")] forState:UIControlStateNormal];
+//            self.playbackButton.enabled = YES;
+//            self.infoLabel.text = @"Playing";
+        {
+            [UIView animateWithDuration:0.25 animations:^{
+             //   self.infoLabel.alpha = 0;
+            }];
+        }
+            break;
+            
+        case WZStateStopping:
+//            self.playbackButton.enabled = NO;
+//            self.infoLabel.alpha = 1;
+//            self.infoLabel.text = @"Stopping";
+            break;
+            
+        case WZStateBuffering:
+           // self.infoLabel.text = @"Buffering...";
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void) onWZEvent:(WZStatus *) goCoderStatus {
+    // nothing to do
+}
+
+- (void) onWZError:(WZStatus *) goCoderStatus {
+    // If an error is reported by the GoCoder SDK, display an alert dialog containing the error details
+    //[WOWZPlayerViewController showAlertWithTitle:@"Playback Error" status:goCoderStatus presenter:self];
+}
+
+
+#pragma mark - WOWZDataSink
+
+- (void) onData:(WZDataEvent *)dataEvent {
+    NSLog(@"Got data - %@", dataEvent.description);
+}
+
+#pragma mark -
+
++ (void) showAlertWithTitle:(NSString *)title status:(WZStatus *)status presenter:(UIViewController *)presenter {
+    
+   // [SettingsViewController presentAlert:title message:status.description presenter:presenter];
+}
+
++ (void) showAlertWithTitle:(NSString *)title error:(NSError *)error presenter:(UIViewController *)presenter {
+    
+  //  [SettingsViewController presentAlert:title message:error.localizedDescription presenter:presenter];
+}
+
 
 @end
