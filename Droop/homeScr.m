@@ -21,7 +21,7 @@
 #import "MP4Writer.h"
 
 
-
+#import "goliveScr.m"
 #pragma mark VideoPlayerViewController (GoCoder SDK Sample App) -
 
 //NSString *const SDKSampleSavedConfigKey = @"SDKSampleSavedConfigKey";
@@ -326,7 +326,50 @@ CGRect frameInitial;
             
             
             
+            [WowzaGoCoder setLogLevel:WowzaGoCoderLogLevelDefault];
             
+            // Load or initialization the streaming configuration settings
+            NSData *savedConfig = [[NSUserDefaults standardUserDefaults] objectForKey:SDKSampleSavedConfigKey];
+            if (savedConfig) {
+                self.goCoderConfig = [NSKeyedUnarchiver unarchiveObjectWithData:savedConfig];
+            }
+            else {
+                self.goCoderConfig = [WowzaConfig new];
+            }
+            
+            //default to these on... you can change.
+            self.goCoderConfig.audioEnabled = YES;
+            self.goCoderConfig.videoEnabled = YES;
+            
+            //dont let the app sleep from idle timer while watching clips.
+            [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+            
+            NSLog (@"WowzaGoCoderSDK version =\n major:%lu\n minor:%lu\n revision:%lu\n build:%lu\n short string: %@\n verbose string: %@",
+                   (unsigned long)[WZVersionInfo majorVersion],
+                   (unsigned long)[WZVersionInfo minorVersion],
+                   (unsigned long)[WZVersionInfo revision],
+                   (unsigned long)[WZVersionInfo buildNumber],
+                   [WZVersionInfo string],
+                   [WZVersionInfo verboseString]);
+            
+            NSLog (@"%@", [WZPlatformInfo string]);
+            
+      //       Register the GoCoder SDK license key
+            NSError *goCoderLicensingError = [WowzaGoCoder registerLicenseKey:SDKSampleAppLicenseKey];
+            if (goCoderLicensingError != nil) {
+               //  Handle license key registration failure
+              //  [VideoPlayerViewController showAlertWithTitle:@"GoCoder SDK Licensing Error" error:goCoderLicensingError presenter:self];
+            }
+            else {
+//                self.player = [WOWZPlayer new];
+//
+//                self.volumeSlider.value = self.player.volume;
+//                // Set default preroll buffer duration
+//                self.player.prerollDuration = [[NSUserDefaults standardUserDefaults] floatForKey:PlaybackPrerollKey];
+
+                // Optionally set up data sink to handle in stream events
+           //     [self.player registerDataSink:self eventName:@"onTextData"];
+            }
             
             
             return cell;
